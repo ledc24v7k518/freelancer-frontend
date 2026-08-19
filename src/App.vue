@@ -1,6 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-    <RouterLink class="navbar-brand" to="/">FreelanceConnect</RouterLink>
+    <RouterLink to="/">
+      <img src="/logo.png" alt="FreelanceConnect" class="logo" />
+    </RouterLink>
     <div class="d-flex ms-auto align-items-center gap-3">
       <RouterLink to="/" class="nav-link text-white d-inline">Việc làm</RouterLink>
 
@@ -45,3 +47,14 @@ function logout() {
   router.push("/login");
 }
 </script>
+
+<style scoped>
+.logo {
+  height: 40px;        
+  width: auto;         
+  object-fit: contain;
+  display: block;
+}
+
+</style>
+
