@@ -1,0 +1,150 @@
+/* ============================================================
+   BẢNG MÀU & TYPOGRAPHY — FreelanceConnect
+   Chủ đề: "kết nối" — Navy (tin cậy) + Cam san hô (cơ hội, năng lượng)
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --navy-900: #1b2a4a;
+  --navy-700: #2d4373;
+  --navy-500: #35507a;
+  --coral: #ff7a45;
+  --coral-dark: #e8632f;
+  --bg-app: #f6f7fb;
+  --text-main: #1f2430;
+  --text-muted: #6b7280;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand, .brand-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+/* ---------- Navbar ---------- */
+.app-navbar {
+  background: linear-gradient(120deg, var(--navy-900) 0%, var(--navy-700) 55%, var(--navy-500) 100%);
+  box-shadow: 0 2px 10px rgba(27, 42, 74, 0.25);
+}
+.app-navbar .brand-text {
+  color: #ffffff !important;
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+}
+.app-navbar .brand-text span {
+  color: var(--coral);
+}
+.app-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link.router-link-active {
+  color: #ffffff !important;
+}
+.app-navbar .btn-outline-light:hover {
+  background-color: var(--coral);
+  border-color: var(--coral);
+}
+
+/* ---------- Hero band (trang danh sách việc làm) ---------- */
+.hero-band {
+  background: linear-gradient(120deg, var(--navy-900), var(--navy-700));
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-band::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--coral);
+  opacity: 0.18;
+}
+.hero-band h2 {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+.hero-band p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background-color: var(--coral);
+  border-color: var(--coral);
+  font-weight: 600;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
+}
+.btn-outline-primary {
+  color: var(--navy-700);
+  border-color: var(--navy-700);
+  font-weight: 600;
+}
+.btn-outline-primary:hover {
+  background-color: var(--navy-700);
+  border-color: var(--navy-700);
+}
+.btn, .form-control, .form-select, .card, .badge {
+  border-radius: 0.6rem;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--navy-700);
+}
+a:hover {
+  color: var(--coral-dark);
+}
+
+/* ---------- Cards / list items (job cards) ---------- */
+.list-group-item {
+  border-radius: 0.7rem !important;
+  border: 1px solid #e7e9f0 !important;
+  margin-bottom: 0.6rem;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.list-group-item-action:hover {
+  box-shadow: 0 6px 18px rgba(27, 42, 74, 0.1);
+  transform: translateY(-2px);
+  border-color: var(--coral) !important;
+}
+
+/* ---------- Forms ---------- */
+.form-control:focus, .form-select:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 0.2rem rgba(255, 122, 69, 0.2);
+}
+
+/* ---------- Auth cards (Login/Register) ---------- */
+.auth-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2.2rem;
+  box-shadow: 0 8px 30px rgba(27, 42, 74, 0.08);
+  border-top: 4px solid var(--coral);
+}
+
+/* ---------- Badges / status ---------- */
+.badge.bg-success { background-color: #2f9e5b !important; }
+.badge.bg-danger { background-color: #d9534f !important; }
+.badge.bg-secondary { background-color: var(--navy-500) !important; }
