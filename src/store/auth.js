@@ -1,6 +1,6 @@
 import { reactive } from "vue";
 
-const state = reactive({
+const state = reactive({ // Lưu trữ thông tin người dùng và token
   user: JSON.parse(localStorage.getItem("user") || "null"),
   token: localStorage.getItem("token") || null,
 });
