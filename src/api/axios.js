@@ -13,7 +13,7 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Tự động đăng xuất nếu token hết hạn / không hợp lệ (401)
+// Tự động xử lý lỗi 401 Unauthorized và xóa token khỏi localStorage
 api.interceptors.response.use(
   (response) => response,
   (error) => {
