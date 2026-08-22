@@ -37,7 +37,7 @@ const loading = ref(true);
 const saving = ref(false);
 const newCategory = reactive({ name: "", description: "" });
 
-async function fetchCategories() {
+async function fetchCategories() { // Lấy danh sách danh mục từ API
   loading.value = true;
   try {
     const { data } = await getCategories();
