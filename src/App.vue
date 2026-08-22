@@ -47,7 +47,7 @@ function logout() {
   router.push("/login");
 }
 </script>
-
+// Kich thước logo được đặt trong CSS để đảm bảo hiển thị đúng trên các thiết bị khác nhau.
 <style scoped>
 .logo {
   height: 40px;        
