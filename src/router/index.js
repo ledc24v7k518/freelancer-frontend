@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import auth from "../store/auth";
-
+// Các route của ứng dụng
 const routes = [
   { path: "/", name: "Projects", component: () => import("../views/Projects.vue") },
   { path: "/projects/:id", name: "ProjectDetail", component: () => import("../views/ProjectDetail.vue"), props: true },
