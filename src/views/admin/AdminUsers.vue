@@ -51,7 +51,7 @@ async function fetchUsers() {
   }
 }
 
-async function handleToggleLock(id) {
+async function handleToggleLock(id) { // Xử lý khóa/mở khóa tài khoản
   await toggleLockUser(id);
   await fetchUsers();
 }
