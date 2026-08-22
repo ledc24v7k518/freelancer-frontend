@@ -43,7 +43,7 @@ const loading = ref(true);
 async function fetchMyProjects() {
   loading.value = true;
   try {
-    // Backend chưa có filter theo employerId riêng, nên lọc lại ở client theo id đang đăng nhập
+    // Lấy danh sách dự án của người dùng hiện tại
     const { data } = await getProjects({ status: "open" });
     const { data: dataClosed } = await getProjects({ status: "closed" });
     const all = [...data.projects, ...dataClosed.projects];
